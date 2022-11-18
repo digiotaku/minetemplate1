@@ -1,0 +1,95 @@
+
+body{
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+margin: 0;
+font-family: monospace;
+
+
+}
+
+.titulo{
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+top: 0;
+width: 100%;
+height: 100%;
+flex-direction: column;
+}
+.iris{
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.titulo h2{
+font-size: 5rem;
+color: white;
+text-decoration: solid;
+text-shadow: 1px 1px 5px #000;
+}
+
+.bi{
+    display: inline-block;
+    vertical-align: -.125em;
+    fill: currentcolor;
+    margin-left: 1rem;
+}
+
+.xd1 img{
+opacity: 0.8;
+}
+.col h3{
+color: white;
+}
+
+
+.btn-mojon{
+
+    padding: 15px 35px;
+    font-size: 30px;
+    min-width: 300px;
+    color: #fff;
+    background-color: #31b0d5;
+
+}
+
+.hover-img:hover{
+  transform: scale(1.1);
+  transition: ease-out 1s;
+}
+
+
+.btn-glow {
+    -webkit-animation-name: bluePulse;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    text-shadow: none;
+  }
+  @-webkit-keyframes bluePulse {
+    from { background-color: #1CC7E3; -webkit-box-shadow: 0 0 9px #1CC7E3; }
+    50% { background-color: #1FD9F2; -webkit-box-shadow: 0 0 18px #1FD9F2; }
+    to { background-color: #1CC7E3; -webkit-box-shadow: 0 0 9px #1CC7E3; }
+  }
+
+
+  @media(max-width: 768px){
+
+.btn-mojon{
+    min-width: 250px;
+    padding: 15px 20px;
+    font-size: 16px;
+}
+
+
+  }
+
+  @media(max-width: 500px){
+
+   .titulo h2{
+    font-size: 4rem;
+   }
+
+}
