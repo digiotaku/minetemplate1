@@ -5,9 +5,28 @@ display: flex;
 flex-direction: column;
 margin: 0;
 font-family: monospace;
-
-
 }
+
+
+.video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.tracking-in-expand-fwd{-webkit-animation:tracking-in-expand-fwd .8s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand-fwd .8s cubic-bezier(.215,.61,.355,1.000) both}
+
+@-webkit-keyframes tracking-in-expand-fwd{0%{letter-spacing:-.5em;-webkit-transform:translateZ(-700px);transform:translateZ(-700px);opacity:0}40%{opacity:.6}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes tracking-in-expand-fwd{0%{letter-spacing:-.5em;-webkit-transform:translateZ(-700px);transform:translateZ(-700px);opacity:0}40%{opacity:.6}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}
 
 .titulo{
 position: absolute;
